@@ -26,7 +26,7 @@ IST = pytz.timezone("Asia/Kolkata")
 
 @app.route("/")
 def home():
-    return send_from_directory(FRONTEND_DIR, "index.html")
+    return send_from_directory(os.path.dirname(__file__), "index.html")
 
 
 @app.errorhandler(404)
