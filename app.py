@@ -14,7 +14,7 @@ import pytz
 import traceback
 
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
-FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
+FRONTEND_DIR = BASE_DIR
 
 # The frontend folder is served from the site root, so
 #   /css/style.css, /js/app.js, /auth.html ... all resolve (no more 404s).
